@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-/mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.model.AnimalDaoImpl">
+<insert id="animalInsert" parameterType="com.min.edu.vo.AnimalHospitalDto">
+INSERT INTO SEOUL_ANIMALHOSPITAL
+(LASTMODTS, DTLSTATENM, LINDJOBGBNNM, BPLCNM, CLGENDDT, DCBYMD, CLGSTDT, TRDSTATEGBN, TRDSTATENM, OPNSFTEAMCODE, SITETEL, SITEWHLADDR, GUOFFICE, DTLSTATEGBN, RDNPOSTNO, UPDATEGBN, UPDATEDT, APVPERMYMD, RDNWHLADDR, ROPNYMD, MGTNO)
+VALUES(#{lastmodts}, #{dtlstatenm}, #{lindjobgbnnm}, #{bplcnm}, #{clgenddt}, #{dcbymd}, #{clgstdt}, #{trdstategbn}, #{trdstatenm}, #{opnsfteamcode}, #{sitetel}, #{sitewhladdr}, #{guoffice}, #{dtlstategbn}, #{rdnpostno}, #{updategbn}, #{updatedt}, #{apvpermymd}, #{rdnwhladdr}, #{ropnymd}, #{mgtno})
+
+</insert>
+
+<delete id="animalDelete">
+TRUNCATE TABLE SEOUL_ANIMALHOSPITAL
+</delete>
+</mapper>

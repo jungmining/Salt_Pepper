@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@media screen and (max-width:1250px){
+	header{
+		height: 400px;
+	}
+	body{
+		width: 1000px;
+	}
+}
+.img-main {
+	width: 70px;
+	/* margin: 0px 0px 0px 0px; */
+	padding: 2.2px;
+	background-color: #fff;
+	border: 0.5px solid #ddd;
+	border-radius: 100px;
+	display: inline-block;
+	max-width: 100%;
+	height: 70px;
+	margin: -15px 0px 50px 50px;
+}
+li{
+	margin-right: 20px; 
+}
+
+
+section {
+	position: relative;
+	width: 100%;
+	padding: 15px 5%;
+	margin: 10px 10px 10px 10px;
+}
+footer {
+	margin-top: 100px;
+	position: relative;
+	padding-top: 25px;
+	width: 100%;
+	min-width: 700px;
+	height: 80px;
+	background: #bde1d4;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	line-height: 20px;
+}
+
+footer p {
+	font-family: sans-serif, cursive;
+	font-size: 1.1em;
+	line-height: 10px;
+	color: #337ab7;
+	text-align: center;
+}
+.mainPhoto{
+/* 	float: right; */
+	width: 200px;
+	height : 800px;
+	margin-left : 600px;
+	border: 1px solid #ccc;
+}
+#salt, #pepper {
+	margin-left : 30%;
+	box-sizing: border-box;
+	clear: both;
+	position: relative;
+	width: 600px;
+	height: 420px;
+	padding: 15px 2% 10px 5%;
+	border: 1px solid #ccc;
+}
+
+.salt-photo>img, .pepper-photo>img {
+	width: 100%;
+	max-width: 320px;
+	height: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#salt.salt-text, #pepper.pepper-text {
+	border: thin solid #ccc;
+	width: 150px;
+	float: right;
+	text-align: center;
+	line-height: 1.2;
+	font-family: monospace;
+}
+
+#salt .salt-photo, #pepper .pepper-photo {
+	float: left;
+	margin-right: 5%;
+} 
+#salt ul, #pepper ul{
+	padding-top: 50px;
+	font-size: 1.2em;
+	
+}

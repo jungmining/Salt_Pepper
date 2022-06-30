@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.login-form{
+	position: relative;
+	border : 1px solid #ccc;
+	width: 800px;
+	margin-top : 80px;
+	margin-left : 20%;
+/* 	top : 50%;
+	left : 20%; */
+	box-sizing: border-box;
+	height:300px;
+	display : inline-block;
+	background: #bde1d4 center no-repeat;
+/* /* 	margin : 80px 50px 200px 50px;*/
+	/* padding : 200px 40px 0px 0px;  */
+	
+}
+
+.login-form>p{
+	text-align: center;
+	font-size: 1.3em;
+	margin-top: 12%;
+	font-weight: 2px;
+	
+}
+.login-form>p>input{
+	font-size: 1.0em;
+	margin-left: 30px;
+	padding-left: 8px;
+	border : 1.5px solid gray;
+}
+
+.login{
+	background-color: #8dd0cc;
+	width: 80px;
+	height: 80px;
+	border-radius: 20px;
+	color : white;
+	border-color : #8dd0cc;
+	float: right;
+	margin-top: 12%;
+	margin-right: 20%;
+	margin-left: -20%;
+	font-size: 1.3em;
+	
+}
+.idpw{
+	margin: 30px 0 0 33%;
+}
+.idpw>input{
+	margin-left: 10px;
+	background-color: #8dd0cc;
+	border-radius: 10px;
+	border-color : #8dd0cc;
+	color : white;
+}

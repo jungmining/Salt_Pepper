@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-/mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.model.MemberDaoImpl">
+
+	<insert id="signUp" parameterType="memberVo">
+	INSERT INTO MEMBERS
+	(SEQ, NAME, ID, PASSWORD, PHONE, ADDRESS, BIRTH)
+	VALUES(MEMBERS_SEQ.NEXTVAL, #{name}, #{id},#{password},#{phone}, #{address}, #{birth})
+	</insert>
+
+	<select id="loginSelect" parameterType="java.util.HashMap" resultType="memberVo">
+		SELECT SEQ, NAME, ID, PASSWORD, PHONE, ADDRESS, BIRTH FROM MEMBERS WHERE ID = #{id} AND PASSWORD = #{password}
+	</select>	
+	
+	<select id="idChk" parameterType="java.lang.String" resultType="java.lang.Integer">
+		SELECT COUNT(ID) FROM MEMBERS WHERE ID= #{id}
+	</select>
+	
+	<select id="findId" parameterType="java.util.Map" resultType="memberVo">
+		SELECT ID FROM MEMBERS WHERE NAME = #{name} AND PHONE =#{phone} AND BIRTH = #{birth}	
+	</select>
+	<update id="updatePw" parameterType="java.util.Map">
+		UPDATE MEMBERS SET PASSWORD = #{password} WHERE ID = #{id} AND NAME = #{name} AND PHONE = #{phone}
+	</update>
+	
+	<select id="findPw" parameterType="java.util.Map" resultType="memberVo">
+		SELECT PASSWORD FROM MEMBERS WHERE ID = #{id} AND NAME = #{name} AND PHONE = #{phone}	
+	</select>
+</mapper>
